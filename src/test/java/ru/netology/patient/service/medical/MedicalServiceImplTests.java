@@ -1,3 +1,5 @@
+package ru.netology.patient.service.medical;
+
 import org.junit.jupiter.api.*;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
@@ -5,7 +7,6 @@ import org.mockito.MockitoSession;
 import ru.netology.patient.entity.*;
 import ru.netology.patient.repository.*;
 import ru.netology.patient.service.alert.*;
-import ru.netology.patient.service.medical.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -42,8 +43,6 @@ public class MedicalServiceImplTests {
     public static void finishedAll() {
         System.out.println("Тесты выполнены");
     }
-
-
 
     @Test
     void testCheckBloodPressureMessageOutput() {
